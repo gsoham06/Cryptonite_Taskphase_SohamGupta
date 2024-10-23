@@ -1,37 +1,37 @@
-Comprehending Commands
+# Comprehending Commands
 
-1. cat : not the pet, but the command
-cat is used to read out files. It can also concatenate multiple files if specified.
+1. **cat: Not the Pet, but the Command**  
+   `cat` is used to read out files. It can also concatenate multiple files if specified.
 
-2. catting absolute paths
-We can use absolute paths as cat arguments as well
+2. **Catting Absolute Paths**  
+   We can use absolute paths as `cat` arguments as well.
 
-3. more catting practice
-Gave specified absolute path as argument to cat
+3. **More Catting Practice**  
+   Provided a specified absolute path as an argument to `cat`.
 
-4. grepping for a needle in the haystack
-grep command is what we need to use when we need to find lines containing a specific string in a file.
+4. **Grepping for a Needle in the Haystack**  
+   The `grep` command is used to find lines containing a specific string in a file.
 
-5. listing files
-ls command lists all files in directories we provide as argument
+5. **Listing Files**  
+   The `ls` command lists all files in directories provided as arguments.
 
-6. touching files
-touch is used to create a blank file and we give name as argument. We cd to the directory we want to create the file in and then use touch.
+6. **Touching Files**  
+   `touch` is used to create a blank file, with the name given as an argument. First, navigate to the desired directory using `cd`, then use `touch` to create the file.
 
-7. removing files
-rm is command we use to remove/delete a file. The file name we want to remove is put as an argument.
+7. **Removing Files**  
+   The `rm` command deletes a file. The file name to remove is provided as an argument.
 
-8. hidden files
-ls does not list all files by default. Files starting with '.' are not visible with ls. We must use ls -a to view the files. Used ls / -a in this challenge to see the flag file and used cat with the flag file.
+8. **Hidden Files**  
+   By default, `ls` does not list all files. Files that start with `.` are hidden. Use `ls -a` to view them. In this challenge, I used `ls / -a` to locate the flag file and then used `cat` to read the flag file.
 
-9. An Epic Filesystem Quest
-Was a very long procedure. Had to play around with ls and cd and cat multiple times and after going to multiple directories and reading multiple files, finally got the  flag.
+9. **An Epic Filesystem Quest**  
+   This was a lengthy procedure. I had to use `ls`, `cd`, and `cat` multiple times, navigating through several directories and reading files to eventually find the flag.
 
-10. making directories
-We can make directories using command mkdir followed by directory name we want to give.
+10. **Making Directories**  
+    The `mkdir` command is used to create a directory, followed by the desired directory name.
 
-11. finding files
-Use find command to search for files, We first search for all location where file flag is stored and then we cat to each path one by one and see if it gives us flag.
+11. **Finding Files**  
+    Use the `find` command to search for files. I searched for all locations where the file "flag" was stored and used `cat` on each path one by one until the flag was found.
 
-12. linking files
-We can link one file to another using ln. ln makes hard links which ln -s makes soft links or symbolic links. In this challenge we had to link /home/hacker/not-the-flag to /flag and then run /challenge/catflag.
+12. **Linking Files**  
+    We can link one file to another using `ln`. `ln` creates hard links, while `ln -s` creates soft links or symbolic links. In this challenge, I linked `/home/hacker/not-the-flag` to `/flag` and then ran `/challenge/catflag`.
